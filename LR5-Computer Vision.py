@@ -8,7 +8,7 @@ import pandas as pd
 # ---------------------------------------------------------
 # Step 1: Create a new Streamlit application using Python and configure an appropriate page title and layout.
 # ---------------------------------------------------------
-st.set_page_config(page_title="NeuralSight CV", layout="wide")
+st.set_page_config(page_title="CPU-Based Image Classifier", layout="wide")
 
 st.title("VisionNet: CPU-Based Image Classifier")
 st.info("This system leverages Deep Learning to categorize visual data on a CPU-only environment.")
@@ -98,4 +98,5 @@ if user_image:
     st.write(summary)
     st.caption("Higher bar values in the chart indicate stronger activation in the final softmax layer.")
 else:
+
     st.warning("Please upload a file to begin the classification process.")
